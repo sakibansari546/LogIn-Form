@@ -11,17 +11,16 @@ function togglePasswordVisibility() {
   }
 }
 
+  const form = document.querySelector('form');
+  const loginContainer = document.querySelector('.login-container');
+  const emailInput = document.querySelector("#email");
+  const passwordInput = document.querySelector("#password");
+  const emailIcon = document.querySelector("#emailIcon");
+  const tickEmailIcon = document.querySelector(".tick");
+  const passwordIcon = document.querySelector("#passwordIcon");
 
 
 
-const form = document.querySelector('form');
-const loginContainer = document.querySelector('.login-container');
-const emailInput = document.getElementById("email");
-const passwordInput = document.getElementById("password");
-const emailIcon = document.getElementById("emailIcon");
-const tickEmailIcon = document.querySelector(".tick");
-
-const passwordIcon = document.getElementById("passwordIcon");
 
 let emailIsValid = false;
 let passwordIsValid = false;
@@ -60,6 +59,7 @@ function afterSubmitPage() {
   const errorIcon = document.querySelector('.icon-error');
   const validateInputError = document.querySelector('.valid-input');
   const loginError = document.querySelector('.valid-error');
+  const errorIconContainer = document.querySelector('.icon-error');
 
   if (emailIsValid && passwordIsValid) {
     submitPage.style.display = 'flex';
@@ -68,7 +68,8 @@ function afterSubmitPage() {
     errorIcon.style.color = 'rgb(0, 195, 0)';
     validateInputError.innerHTML = 'Login successfully';
     loginError.innerHTML = 'Go to your profile page';
-  } else{
+    errorIconContainer.style.borderColor = 'rgb(0, 195, 0)'
+  } else {
     submitPage.style.display = 'flex';
     loginContainer.style.display = 'none';
   }
@@ -92,6 +93,8 @@ form.addEventListener('submit', (e) => {
 
 
 
+
+const registerConatiner = document.querySelector('.register-container');
 
 
 

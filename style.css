@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(https://backgroundabstract.com/wp-content/uploads/edd/2022/02/5594016-e1656071131636.jpg);
+    background: url(https://www.marshallsindia.com/ImageBuckets/ItemImages/ZA%201903.jpg?id=75);
 
     background-position: center;
     background-repeat: no-repeat;
@@ -61,6 +61,7 @@ body {
 }
 
 .icon {
+    font-size: 18px;
     position: absolute;
     top: 50%;
     right: 15px;
@@ -92,7 +93,9 @@ button:hover {
     justify-content: space-between;
     cursor: pointer;
 }
-
+.forget{
+    font-weight: 600;
+}
 .remember-feild {
     display: flex;
     align-items: center;
@@ -109,6 +112,11 @@ button:hover {
     text-align: center;
     /* margin-bottom: 10px; */
     margin-top: 20px;
+}
+
+.register-div p a{
+    font-weight: 600;
+    color: black;
 }
 
 
