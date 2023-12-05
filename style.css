@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-contaier h2 {
+    margin: 20px 0;
+}
+
+.main-contaier {
+    /* width: 100vw; */
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://backgroundabstract.com/wp-content/uploads/edd/2022/02/5594016-e1656071131636.jpg);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-container {
+    min-width: 350px;
+    width: 400px;
+    backdrop-filter: blur(15px);
+    padding: 20px 60px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-container i {
+    animation: horizontal-shaking .2s 5  ;
+}
+.input-container input {
+    width: calc(100% - 10px);
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    background: transparent;
+    border: none;
+    outline: 0;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.757);
+    /* border-radius: 4px; */
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    color: black;
+    border: none;
+    margin-bottom: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.785);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #060806d1;
+    color: white;
+}
+
+.info {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.remember-feild {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#remember {
+    background: transparent;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+.register-div p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+@keyframes horizontal-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(2px) }
+    50% { transform: translateX(-2px) }
+    75% { transform: translateX(2px) }
+    100% { transform: translateX(0) }
+   }

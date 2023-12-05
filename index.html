@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/LogIn Formm/LogIn-Form/style.css">
+</head>
+
+<body>
+    <div class="main-contaier">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="input-container">
+                    <input type="email" id="email" placeholder="Email">
+                    <span class="icon"><i class="fa-regular fa-envelope" id="emailIcon"></i></i></span>
+                </div>
+                <div class="input-container">
+                    <input type="password" id="password" placeholder="Password">
+                    <span class="icon" id="passwordIcon" onclick="togglePasswordVisibility()"><i
+                            class="fas fa-eye"></i></span>
+                </div>
+                <div class="info">
+                    <div class="remember-feild">
+                        <input type="checkbox" name="remember" id="remember">
+                        <label for="remember">Remember</label>
+                    </div>
+                    <div class="forget">
+                        <p>Forgot Password?</p>
+                    </div>
+                </div>
+                <button type="button" >Login</button>
+            </form>
+            <div class="register-div">
+                <p>Don't have an account? <a href="">Register</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="/LogIn Formm/LogIn-Form/script.js"></script>
+</body>
+
+</html>
